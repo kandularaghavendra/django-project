@@ -1,0 +1,45 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} Products {% endblock %}
+{% block content %}
+
+
+
+<div class="container">
+{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+  		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+  	</div>
+	{% endfor %}
+	{% endif %}
+
+	<div class="row mt-2">
+		<div class="card col-md col-sm mx-1 my-1">
+			<h2 class="bg-info text-center text-white p-2 mt-2 border rounded">Vegetables</h2>
+			<img src="{% static 'images/1.jpg' %}" alt="logo" height=180px>
+		</div>
+		<div class="card col-md col-sm mx-1 my-1">
+			<h2 class="bg-info text-center text-white p-2 mt-2 border rounded">Fruits</h2>
+			<img src="{% static 'images/8.jpg' %}" alt="logo" height=180px>
+		</div>
+		<div class="card col-md col-sm mx-1 my-1">
+			<h2 class="bg-info text-center text-white p-2 mt-2 border rounded">Dairy Products</h2>
+			<img src="{% static 'images/7.jpg' %}" alt="logo" height=180px>
+		</div>
+	</div>
+	<div class="row mt-2">
+		<div class="card col-md col-sm mx-1 my-1">
+			<h2 class="bg-info text-center text-white p-2 mt-2 border rounded">Pulses</h2>
+			<img src="{% static 'images/7.jpg' %}" alt="logo" height=180px>
+		</div>
+		<div class="card col-md col-sm mx-1 my-1">
+			<h2 class="bg-info text-center text-white p-2 mt-2 border rounded">Household</h2>
+			<img src="{% static 'images/7.jpg' %}" alt="logo" height=180px>
+		</div>
+		<div class="card col-md col-sm mx-1 my-1">
+			<h2 class="bg-info text-center text-white p-2 mt-2 border rounded">Personal Care</h2>
+			<img src="{% static 'images/7.jpg' %}" alt="logo" height=180px>
+		</div>
+	</div>
+{% endblock%}

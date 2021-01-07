@@ -1,0 +1,64 @@
+{% load static %}
+<nav class="navbar navbar-expand-sm bg-success navbar-dark">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="{% url 'hm' %}">
+    <img src="{% static 'images/Brandss.jpg' %}" alt="logo" style="width:125px;">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <!-- Navbar links -->
+  <nav class="collapse navbar-collapse" id="collapsibleNavbar">
+  <!-- Links -->
+  <ul class="navbar-nav">
+    {% if not user.is_authenticated %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'ab' %}">AboutUs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'ct' %}">ContactUs</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'reg' %}">Register</a>
+    </li>
+    {% else %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'hm' %}">Home</a>
+    </li>
+   
+<div class="dropdown">
+  <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+    Category
+  </button>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="{% url 'veg' %}">Vegetables</a>
+    <a class="dropdown-item" href="{% url 'fit' %}">Fruits</a>
+    <a class="dropdown-item" href="{% url 'day' %}">Dairy Products</a>
+    <a class="dropdown-item" href="{% url 'pul' %}">Pulses</a>
+    <a class="dropdown-item" href="{% url 'hom' %}">Household</a>
+    <a class="dropdown-item" href="{% url 'car' %}">Personal Care</a>
+  </div>
+</div>
+    {% endif %}
+  </ul>
+  <ul class="navbar-nav ml-auto" style="margin-right: 110px";>
+    {% if not user.is_authenticated %}
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'lgn' %}">Login</a>
+    </li>
+    {% else %}
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" data-toggle="dropdown"><img src="{% static 'images/pro.png'%}" height="25px" width="24px" class="rounded-circle"/></a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="{% url 'pfe' %}">Profile</a>
+        <a class="dropdown-item" href="{% url 'lgo' %}">Logout</a>
+      </div>
+    </li>
+    {% endif %}
+  </ul>
+  </nav>
+</nav>

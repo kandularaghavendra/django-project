@@ -1,0 +1,128 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} Personal Care {% endblock %}
+{% block content %}
+
+
+
+<div class="container">
+{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+  		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+  	</div>
+	{% endfor %}
+	{% endif %}
+
+<center>
+<h2>Personal Care</h2>
+</center>
+
+<h3>Shampoos</h3>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/s1.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Sunsilk Rs.50</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/s2.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Pantene Rs.30</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/s3.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Dove Rs.30</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+	    <div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/s4.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Tresemme Rs.50</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h3>Soaps</h3>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/s5.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Santoor Rs.30</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/s6.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Fiama Rs.25</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/s7.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Mysore Sandal Rs.30</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/s8.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Cinthol Red Rs.30</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock%}

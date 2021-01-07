@@ -1,0 +1,141 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} Pulses {% endblock %}
+{% block content %}
+
+
+<div class="container">
+{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+  		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+  	</div>
+	{% endfor %}
+	{% endif %}
+
+
+<h2>Pulses</h2>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/p1.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Bengal Gram Rs.50</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/p2.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Black Gram Rs.60</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/p3.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Green Gram Rs.80</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/p4.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Horse Gram Rs.60</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<h2>Dry Fruits</h2>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/p5.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Cashews Rs.230</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/p6.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Almonds Rs.130</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/p7.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Pea Nuts Rs.95</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/p8.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Walnuts Rs.180</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock%}

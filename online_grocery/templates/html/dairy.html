@@ -1,0 +1,138 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} Dairy Products {% endblock %}
+{% block content %}
+
+
+<div class="container">
+{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+  		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+  	</div>
+	{% endfor %}
+	{% endif %}
+
+
+<h2>Dairy Products</h2>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/b1.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Butter Rs.50</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/b2.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Milk Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/b3.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Chocolates Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/b4.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Cheese Rs.50</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-3">
+	<div class="row">		
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/b5.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Yogurt Rs.90</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/b8.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Paneer Rs.25</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/b6.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Ghee Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/b7.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Fresh Cream Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock%}

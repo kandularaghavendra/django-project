@@ -1,0 +1,23 @@
+{% extends 'html/base.html' %}
+{% block title %} Aboutus {% endblock %}
+{% block content %}
+{% load static %}
+
+<style>
+  p{
+    padding-left: 150px;
+    padding-top: 150px;
+  }
+</style>
+<div class="media">
+    <div class="media mt-3">
+      <a class="pr-3" href="#">
+        <p><img src="{% static 'images/img9.jfif' %}" alt=""></p>
+      </a>
+      <div class="media-body">
+        <p><h5 class="mt-0">About Us</h5>
+        Hola folks! It looks like you are here to know us better.GroceryShop is a user friendly,easy to use website where one can order grocery products by just search products by just search products and fill up a simple products order form avaliable on the website.Admin can see the products order request and deliver products.To use all these features you need to login first.So register fast and order products.
+      </div>
+    </div></p>
+</div>
+{% endblock %}

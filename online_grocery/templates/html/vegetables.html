@@ -1,0 +1,156 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} Vegetables {% endblock %}
+{% block content %}
+
+
+<div class="container">
+{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+  		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+  	</div>
+	{% endfor %}
+	{% endif %}
+
+
+<h2>Vegetables</h2>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/v1.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Tomato Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="{% url 'cat' %}" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/v2.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Cabbage Rs.25</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="{% url 'cat' %}" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/v3.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Broccoli Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="{% url 'cat' %}" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/v4.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Carrot Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="{% url 'cat' %}" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/v5.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Brinjal Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="{% url 'cat' %}" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/v6.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Potato Rs.25</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="{% url 'cat' %}" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/v7.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Chillies Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="{% url 'cat' %}" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/v8.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Pumpkin Rs.30</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="{% url 'cat' %}" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/v9.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Onions Rs.15</h4>
+					</div>
+					<div class="card-text">fresh
+					</div>
+					<a style="margin:10px;" href="{% url 'cat' %}" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock%}

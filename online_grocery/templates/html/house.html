@@ -1,0 +1,127 @@
+{% extends 'html/base.html' %}
+{% load static %}
+{% block title %} Household {% endblock %}
+{% block content %}
+
+
+<div class="container">
+{% if messages %}
+	{% for k in messages %}
+	<div class="alert alert-{{k.tags}} alert-dismissible">
+  		<button type="button" class="close" data-dismiss="alert">&times;</button>{{k}}
+  	</div>
+	{% endfor %}
+	{% endif %}
+
+<center>
+<h2>Household Items</h2>
+</center>
+
+<h3>Detergents</h3>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/h11.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Surf Excel Rs.50</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/h12.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Tide Rs.30</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/h13.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Comfort Rs.130</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+	    <div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/h14.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Aerial Rs.50</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h3>ToothPastes</h3>
+
+<div class="container mt-3">
+	<div class="row">
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/h15.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Close Up Rs.100</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/h16.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Colgate Rs.125</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/h17.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Pepsodent Rs.130</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-md-3 col-sm-6">
+			<div class="card text-center">
+				<div class="card-block">
+					<img src="{% static 'images/h18.jfif' %}" alt="" height="240" width="210" class="">
+					<div class="card-title">
+						<h4>Dabur Red Rs.60</h4>
+					</div>
+					<a style="margin:10px;" href="#" class="btn btn-success">Add to cart</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock%}
